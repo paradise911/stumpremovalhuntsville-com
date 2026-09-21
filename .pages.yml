@@ -1,0 +1,12 @@
+media:
+  input: /
+  output: /
+content:
+  - name: index
+    label: Главная страница
+    type: file
+    path: index.html
+    fields:
+      - name: body
+        label: Код страницы
+        type: text
