@@ -1090,8 +1090,8 @@
             <div class="space-y-4">
                 <div class="text-center">
                     <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Fast 15-Minute Response</span>
-                    <h3 class="text-2xl font-black text-white mt-1">Upload Stump Photos</h3>
-                    <p class="text-xs text-slate-400 mt-1">Attach 1-2 photos for an exact flat-rate quote sent straight to your phone.</p>
+                    <h3 class="text-2xl font-black text-white mt-1">Request a Free Quote</h3>
+                    <p class="text-xs text-slate-400 mt-1">Attach 1-2 photos of your tree, stump, or lot for an exact flat-rate quote sent straight to your phone.</p>
                 </div>
 
                 <form onsubmit="handleQuoteSubmit(event)" class="space-y-4 pt-2" id="quoteForm">
@@ -1107,7 +1107,8 @@
 
                     <div>
                         <label class="block text-xs font-bold text-slate-300 mb-1">Service City / Location</label>
-                        <select name="location" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                        <select name="location" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                            <option value="" disabled selected>-- Select a City / Location --</option>
                             <option value="Huntsville, AL">Huntsville, AL</option>
                             <option value="Madison, AL">Madison, AL</option>
                             <option value="Athens, AL">Athens, AL</option>
@@ -1128,7 +1129,20 @@
                     </div>
 
                     <div>
-                        <label class="block text-xs font-bold text-slate-300 mb-1">Attach Stump Photo(s)</label>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Service Type</label>
+                        <select name="serviceType" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                            <option value="" disabled selected>-- Select a Service Type --</option>
+                            <option value="Stump Grinding">Stump Grinding</option>
+                            <option value="Full Tree Removal">Full Tree Removal</option>
+                            <option value="Emergency Tree Service">Emergency Tree Service</option>
+                            <option value="Tree Trimming & Canopy Thinning">Tree Trimming & Canopy Thinning</option>
+                            <option value="Lot & Land Clearing">Lot & Land Clearing</option>
+                            <option value="Surface Root & Topsoil Service">Surface Root & Topsoil Service</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Attach Project Photo(s)</label>
                         <div class="border-2 border-dashed border-slate-700 hover:border-amber-400 rounded-2xl p-6 text-center cursor-pointer bg-slate-800/50 transition-colors">
                             <i class="fa-solid fa-cloud-arrow-up text-3xl text-amber-400 mb-2"></i>
                             <span class="block text-xs font-bold text-slate-200">Tap to select photos or drop files here</span>
