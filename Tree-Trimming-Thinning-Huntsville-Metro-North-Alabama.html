@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Trimming & Canopy Thinning Huntsville AL | Local Arborists</title>
+    <meta name="description" content="Professional tree trimming, canopy thinning, and deadwooding in Huntsville, Madison & North AL. Protect your home from storms & improve tree health. Get a free photo quote!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .before-after-container {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-900 text-brand-100 text-xs sm:text-sm py-2 px-4 border-b border-brand-800/50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                <span class="font-medium">Expert Tree Pruning Across the Tennessee Valley (Madison, Limestone, Morgan & Marshall Counties)</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-xs font-semibold">
+                <span><i class="fa-solid fa-tree text-amber-400 mr-1"></i> ISA Certified Arborist Guided</span>
+                <span><i class="fa-solid fa-shield-halved text-amber-400 mr-1"></i> $2M General Liability Insured</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-500 to-brand-800 flex items-center justify-center text-slate-950 shadow-lg group-hover:scale-105 transition-transform">
+                    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2L9 7h2v3H8l-3 5h3v4H2v3h20v-3h-6v-4h3l-3-5h-3V7h2L12 2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-lg font-black tracking-tight text-white block leading-none">
+                        HUNTSVILLE <span class="text-amber-400">STUMP</span>
+                    </span>
+                    <span class="text-[10px] font-bold text-slate-400 tracking-widest uppercase block mt-1">
+                        & TREE SERVICE • ALABAMA
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#trimming-services" class="hover:text-amber-400 transition-colors">Trimming Services</a>
+                <a href="#before-after" class="hover:text-amber-400 transition-colors">Before & After</a>
+                <a href="#reviews" class="hover:text-amber-400 transition-colors">Reviews</a>
+                <a href="#service-areas" class="hover:text-amber-400 transition-colors">Service Areas</a>
+                <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Action CTAs -->
+            <div class="flex items-center gap-3">
+                <div class="hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 text-white font-bold text-sm border border-slate-700 cursor-default">
+                    <i class="fa-solid fa-phone text-amber-400"></i>
+                    <span>(256) 555-0199</span>
+                </div>
+                <button onclick="openQuoteModal()" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-camera mr-1.5"></i> Photo Quote
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero & Instant Trimming Estimator -->
+        <section class="relative bg-slate-900 pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+            <!-- Background Accent Glows -->
+            <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 left-10 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-950/80 border border-brand-500/30 text-brand-400 text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-leaf text-amber-400"></i>
+                            <span>ISA Certified Pruning Standards</span>
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
+                            Expert Tree Trimming & Thinning in <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">The Rocket City</span>
+                        </h1>
+
+                        <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Protect your property from unpredictable Dixie Alley microbursts and heavy spring storms. We specialize in structural pruning, canopy elevation, and crown thinning for the mature oaks, maples, and pines native to the Tennessee Valley. 
+                        </p>
+
+                        <!-- Key Selling Points -->
+                        <div class="grid sm:grid-cols-3 gap-3 pt-2 text-left max-w-xl mx-auto lg:mx-0">
+                            <div class="flex items-center gap-2 text-sm text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-700/50">
+                                <i class="fa-solid fa-wind text-amber-400"></i>
+                                <span>Storm Wind Resistance</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-700/50">
+                                <i class="fa-solid fa-sun text-amber-400"></i>
+                                <span>Better Lawn Sunlight</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-slate-300 bg-slate-800/50 p-2.5 rounded-lg border border-slate-700/50">
+                                <i class="fa-solid fa-house-chimney-crack text-amber-400"></i>
+                                <span>Roof & Line Clearance</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Group -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <button onclick="openQuoteModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-base shadow-xl shadow-amber-500/20 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-camera text-lg"></i>
+                                <span>Get a Free Pruning Estimate</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Interactive Quick Estimator Card -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-700 shadow-2xl relative">
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <h2 class="text-xl font-bold text-white">Trimming Estimator</h2>
+                                    <p class="text-xs text-slate-400">Get a ballpark idea of pruning costs</p>
+                                </div>
+                                <span class="bg-amber-500/10 text-amber-400 text-xs font-bold py-1 px-3 rounded-full border border-amber-500/20">Fast Quote</span>
+                            </div>
+
+                            <form id="heroCalcForm" class="space-y-4" oninput="calculateTrimmingEstimate()">
+                                <div>
+                                    <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
+                                        <label for="treeHeight">Approximate Tree Height (Feet):</label>
+                                        <span id="heightVal" class="text-amber-400 font-bold">40 ft</span>
+                                    </div>
+                                    <input type="range" id="treeHeight" min="15" max="80" step="5" value="40" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-amber-500">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Primary Goal:</label>
+                                    <select id="trimGoal" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-400">
+                                        <option value="1.0">Canopy Elevation (Raise lower limbs)</option>
+                                        <option value="1.3">Crown Thinning (Allow wind/light through)</option>
+                                        <option value="1.2">Deadwooding (Remove dead/dangerous branches)</option>
+                                        <option value="1.5">Roof / Powerline Clearance</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Tree Access for Equipment:</label>
+                                    <select id="accessLevel" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-400">
+                                        <option value="1.0">Good Access (Front yard / Driveway)</option>
+                                        <option value="1.2">Fair Access (Standard backyard)</option>
+                                        <option value="1.4">Poor Access (Fenced, steep, or near structures)</option>
+                                    </select>
+                                </div>
+
+                                <div class="p-4 bg-slate-900/90 rounded-2xl border border-slate-800 text-center">
+                                    <span class="text-xs text-slate-400 block uppercase font-semibold">Estimated Price Range</span>
+                                    <span id="estimatedCostOutput" class="text-3xl font-black text-amber-400 block my-1">$250 - $350</span>
+                                    <span class="text-[11px] text-slate-500">*Final quote confirmed via photos or site visit.</span>
+                                </div>
+
+                                <button type="button" onclick="openQuoteModal()" class="w-full py-3.5 rounded-xl bg-brand-700 hover:bg-brand-600 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                                    <span>Lock In This Quote Now</span>
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Core Trimming Services -->
+        <section id="trimming-services" class="py-20 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Arboricultural Excellence</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">How We Transform Your Trees</h2>
+                    <p class="text-slate-400 text-sm sm:text-base">We never practice harmful "tree topping". Our pruning methods are designed to enhance the natural structure, health, and beauty of North Alabama's magnificent canopy.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service 1 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all group">
+                        <div class="w-14 h-14 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-wind text-2xl text-brand-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Crown Thinning</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            We selectively remove inner branches throughout the crown. This critical service reduces the "sail effect", allowing the intense Tennessee Valley straight-line winds to pass safely through the tree rather than uprooting it. 
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Prevents storm uprooting</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Lets sunlight reach your lawn</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all group">
+                        <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-arrow-up text-2xl text-amber-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Canopy Elevation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Also known as crown raising, this involves carefully removing the lowest branches of the tree. Perfect for clearing walkways, driveways, or ensuring your zero-turn mower has plenty of safe clearance underneath.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Minimum 8ft pedestrian clearance</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Opens up street-view aesthetics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all group">
+                        <div class="w-14 h-14 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-house-chimney-crack text-2xl text-red-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Roof & Structure Clearance</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Branches resting on your roof will destroy shingles, trap moisture, and provide a super-highway for squirrels and pests into your attic. We prune limbs back a safe distance from your home's facade and roofline.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Prevents costly shingle damage</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Keeps wildlife off your roof</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-brand-500/50 transition-all group lg:col-start-2 lg:col-span-1">
+                        <div class="w-14 h-14 rounded-xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-skull-crossbones text-2xl text-brand-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Deadwooding</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Dead branches are massive hazards waiting to fall on cars, kids, or structures during the next storm. We systematically climb or utilize lifts to remove large, decaying limbs before they can cause damage, simultaneously improving the tree's overall vigor.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Before & After (Placeholder Images) -->
+        <section id="before-after" class="py-20 bg-slate-900 border-y border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Visual Results</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">Canopy Transformation Gallery</h2>
+                    <p class="text-slate-400 text-sm">Proper pruning doesn't just make your property safer—it dramatically improves curb appeal.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- Before/After Pair 1 -->
+                    <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-xl">
+                        <div class="grid grid-cols-2 relative">
+                            <div class="relative">
+                                <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded shadow">Before</span>
+                                <!-- PLACEHOLDER IMAGE -->
+                                <div class="w-full h-56 bg-slate-800 flex items-center justify-center text-slate-500 border-r border-slate-700">
+                                    [ Insert Overgrown Tree Image ]
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <span class="absolute top-2 left-2 bg-brand-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded shadow">After</span>
+                                <!-- PLACEHOLDER IMAGE -->
+                                <div class="w-full h-56 bg-slate-800 flex items-center justify-center text-slate-500">
+                                    [ Insert Elevated Canopy Image ]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="font-bold text-white text-base">Canopy Elevation in Madison</h4>
+                            <p class="text-sm text-slate-400 mt-1">Raised lower limbs by 12 feet to allow clearance for driveway parking and increased sunlight to the front lawn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Before/After Pair 2 -->
+                    <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-xl">
+                        <div class="grid grid-cols-2 relative">
+                            <div class="relative">
+                                <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded shadow">Before</span>
+                                <!-- PLACEHOLDER IMAGE -->
+                                <div class="w-full h-56 bg-slate-800 flex items-center justify-center text-slate-500 border-r border-slate-700">
+                                    [ Insert Dense Crown Image ]
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <span class="absolute top-2 left-2 bg-brand-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded shadow">After</span>
+                                <!-- PLACEHOLDER IMAGE -->
+                                <div class="w-full h-56 bg-slate-800 flex items-center justify-center text-slate-500">
+                                    [ Insert Thinned Crown Image ]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="font-bold text-white text-base">Crown Thinning on a Mature Oak</h4>
+                            <p class="text-sm text-slate-400 mt-1">Selectively removed 20% of inner canopy growth to reduce wind resistance before spring storm season in Huntsville.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Customer Reviews -->
+        <section id="reviews" class="py-20 bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Top Rated Arborists</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">What Your Neighbors Are Saying</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex text-amber-400 text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "We had a massive sweetgum that was dropping dead branches on our driveway every time the wind blew. The crew came out, thinned the top, and removed all the dangerous deadwood. They cleaned up every single leaf before leaving. Incredible service."
+                        </p>
+                        <div class="text-xs">
+                            <span class="font-bold text-white block">Robert M.</span>
+                            <span class="text-slate-500">Hampton Cove, AL</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex text-amber-400 text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "I needed the branches trimmed back off my roof in Jones Valley. These guys knew exactly what they were doing. They didn't just hack the tree apart; they pruned it properly so it still looks completely natural."
+                        </p>
+                        <div class="text-xs">
+                            <span class="font-bold text-white block">Amanda J.</span>
+                            <span class="text-slate-500">Huntsville, AL</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex text-amber-400 text-xs">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Our Zoysia grass was dying because the oak trees cast too much shade. Huntsville Stump & Tree thinned out the canopy perfectly. Now the lawn is getting sunlight and looks great, and the trees look healthier too."
+                        </p>
+                        <div class="text-xs">
+                            <span class="font-bold text-white block">Kevin D.</span>
+                            <span class="text-slate-500">Athens, AL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Service Areas (Geo Hub) -->
+        <section id="service-areas" class="py-20 bg-slate-900 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Local Knowledge</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-white">Serving The Greater Tennessee Valley</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            As locals serving the <strong>Huntsville–Decatur–Albertville CSA</strong>, we understand the specific challenges trees face here. From the slopes of Monte Sano Mountain down to the shores of Wheeler and Guntersville lakes, the heavy Appalachian foothill winds and Dixie Alley microbursts can wreak havoc on dense, top-heavy canopies.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            We properly thin mature Highland Rim oaks, maples, and pines so they bend with the storms, protecting properties throughout Madison, Limestone, and Morgan counties.
+                        </p>
+
+                        <!-- Suburb Grid Links -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm pt-4">
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Huntsville, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Madison, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Athens, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Meridianville, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Harvest, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Hazel Green, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">New Market, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Owens X Rds, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Triana, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Ardmore, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Decatur, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Hartselle, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Albertville, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Boaz, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Arab, AL</span></div>
+                            <div class="bg-slate-950 p-2.5 rounded-xl border border-slate-800 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-400"></i><span class="font-bold text-white text-xs sm:text-sm truncate">Guntersville, AL</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Map Graphic Representation -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-slate-950 rounded-3xl border border-slate-800 p-6 relative overflow-hidden shadow-2xl">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-xs font-bold text-slate-400 uppercase tracking-wider"><i class="fa-solid fa-map-pin text-red-500 mr-1"></i> North Alabama Coverage</span>
+                                <span class="text-xs text-brand-400 bg-brand-950 border border-brand-500/30 px-3 py-1 rounded-full font-bold">Fast Dispatch</span>
+                            </div>
+                            
+                            <!-- Stylized Local Map Container -->
+                            <div class="aspect-video bg-slate-200 rounded-2xl border border-slate-700 relative flex items-center justify-center p-6 overflow-hidden bg-cover bg-center" style="background-image: url('./img8.jpg');">
+                                <div class="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
+                                
+                                <div class="relative z-10 text-center space-y-4">
+                                    <div class="w-16 h-16 rounded-full bg-slate-950 border-2 border-amber-400 flex items-center justify-center mx-auto text-amber-400 animate-bounce shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                                        <i class="fa-solid fa-leaf text-2xl"></i>
+                                    </div>
+                                    <h4 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight text-shadow-lg">
+                                        Serving The Rocket City & The Entire Tennessee Valley
+                                    </h4>
+                                    <p class="text-sm sm:text-base font-medium text-slate-200 max-w-md mx-auto">
+                                        From neighborhoods surrounding Redstone Arsenal and Marshall Space Flight Center, to Clift Farm, Monrovia, and over the mountain to Hampton Cove.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: How to take photos -->
+        <section id="photo-guide" class="py-20 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Fast & Accurate Quotes</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">How To Photograph Your Trees</h2>
+                    <p class="text-slate-400 text-sm">Help us give you the most accurate remote estimate by attaching a few clear photos in our quote form.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 shadow-lg">
+                        <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center mx-auto text-amber-400 text-2xl shadow-inner">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">1. The Full Tree</h3>
+                        <p class="text-slate-400 text-sm">Step back and take a wide shot showing the entire tree from the ground up to the very top of the canopy.</p>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 shadow-lg">
+                        <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center mx-auto text-amber-400 text-2xl shadow-inner">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">2. The Problem Area</h3>
+                        <p class="text-slate-400 text-sm">Zoom in or walk closer to photograph the specific branches you want trimmed, deadwood, or roof clearance issues.</p>
+                    </div>
+
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 shadow-lg">
+                        <div class="w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center mx-auto text-amber-400 text-2xl shadow-inner">
+                            <i class="fa-solid fa-truck-field"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">3. Surroundings & Access</h3>
+                        <p class="text-slate-400 text-sm">Show the area around the base of the tree. This lets us see fences, power lines, and if equipment can drive up.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intermediate Photo Upload CTA -->
+        <section class="py-16 bg-slate-900 border-t border-slate-800 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/5 via-slate-900 to-slate-900 pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h3 class="text-2xl sm:text-3xl font-black text-white mb-3">Got Your Photos Ready?</h3>
+                <p class="text-slate-400 text-sm mb-8 max-w-lg mx-auto">Skip the onsite visit! Upload your pictures now to receive a fast, accurate pruning estimate directly to your phone.</p>
+                <button onclick="openQuoteModal()" class="px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-base shadow-xl shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 mx-auto">
+                    <i class="fa-solid fa-cloud-arrow-up text-lg"></i>
+                    <span>Upload Photos For Quote</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 6: FAQ Accordion -->
+        <section id="faq" class="py-20 bg-slate-950 border-t border-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 space-y-3">
+                    <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest">Trimming Knowledge</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">Frequently Asked Questions</h2>
+                    <p class="text-slate-400 text-sm">Answers to common questions about tree care and pruning in North Alabama.</p>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 transition-all">
+                        <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center text-left focus:outline-none">
+                            <span class="font-bold text-white text-base">When is the best time to trim trees in North Alabama?</span>
+                            <i id="faq-icon-1" class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                        </button>
+                        <div id="faq-ans-1" class="hidden mt-4 text-sm text-slate-400 leading-relaxed pt-2 border-t border-slate-800">
+                            The ideal time for major pruning is during late fall or winter when trees are dormant. This reduces sap loss and minimizes the risk of insect infestation or disease transmission. However, <strong>deadwooding</strong> (removing dead or hazardous branches) and <strong>light canopy elevation</strong> can and should be done at any time of the year to ensure property safety, especially before our stormy spring season.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 transition-all">
+                        <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center text-left focus:outline-none">
+                            <span class="font-bold text-white text-base">What is the difference between "thinning" and "topping"?</span>
+                            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                        </button>
+                        <div id="faq-ans-2" class="hidden mt-4 text-sm text-slate-400 leading-relaxed pt-2 border-t border-slate-800">
+                            <strong>Topping</strong> is an outdated, harmful practice where the main upper trunk and branches are indiscriminately cut off, leaving ugly stubs. This ruins the tree's structure and leads to weak, dangerous regrowth. <strong>Thinning</strong> is the proper arboricultural practice of selectively removing inner branches at their point of origin to increase light and airflow while preserving the tree's natural shape and structural integrity. We never top trees.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 transition-all">
+                        <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center text-left focus:outline-none">
+                            <span class="font-bold text-white text-base">Do I need a permit to trim my tree in Huntsville or Madison?</span>
+                            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                        </button>
+                        <div id="faq-ans-3" class="hidden mt-4 text-sm text-slate-400 leading-relaxed pt-2 border-t border-slate-800">
+                            Generally, standard pruning and trimming on privately owned residential property does not require a permit. However, restrictions may apply if the tree is located in a designated Historic District (like Twickenham), is located in a city right-of-way, or falls under specific HOA guidelines. We can help advise you on your specific location during the estimate.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 transition-all">
+                        <button onclick="toggleFaq(4)" class="w-full flex justify-between items-center text-left focus:outline-none">
+                            <span class="font-bold text-white text-base">How much clearance should trees have from my roof?</span>
+                            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                        </button>
+                        <div id="faq-ans-4" class="hidden mt-4 text-sm text-slate-400 leading-relaxed pt-2 border-t border-slate-800">
+                            We recommend maintaining a minimum clearance of 8 to 10 feet between tree limbs and your roof or home exterior. This distance prevents wind-whipped branches from scraping off asphalt shingles, stops algae growth from trapped moisture, and makes it much more difficult for squirrels, rats, and raccoons to access your attic.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 transition-all">
+                        <button onclick="toggleFaq(5)" class="w-full flex justify-between items-center text-left focus:outline-none">
+                            <span class="font-bold text-white text-base">Will thinning the canopy help my grass grow?</span>
+                            <i id="faq-icon-5" class="fa-solid fa-chevron-down text-amber-400 transition-transform"></i>
+                        </button>
+                        <div id="faq-ans-5" class="hidden mt-4 text-sm text-slate-400 leading-relaxed pt-2 border-t border-slate-800">
+                            Yes! Warm-season grasses common in our area, like Bermuda and Zoysia, require significant direct sunlight to thrive in Alabama red clay. If a large oak or maple is casting dense shade, your grass will thin out and die. Canopy thinning and elevation allow dappled sunlight to reach the ground, which is often exactly what your lawn needs to recover.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Final High-Intent CTA Banner -->
+        <section class="relative py-20 text-white bg-gradient-to-r from-slate-900 via-brand-950 to-slate-900 border-t border-slate-800 overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 text-center space-y-6 relative z-10">
+                <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-black uppercase tracking-widest py-1 px-3 rounded-full inline-block">
+                    Protect Your Property
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-black leading-tight">
+                    Ready For Healthier, Safer Trees?
+                </h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base">
+                    Send us 2 quick photos of the tree you need trimmed. We'll text you back a fast estimate so you can get your canopy ready for the next season!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                    <button onclick="openQuoteModal()" class="px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-lg shadow-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Get Your Free Trimming Quote</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-3">
+                <div class="text-white font-black text-base flex items-center gap-2">
+                    <i class="fa-solid fa-tree text-amber-400"></i>
+                    <span>HUNTSVILLE STUMP REMOVAL</span>
+                </div>
+                <p class="text-slate-500 leading-relaxed">
+                    Licensed and insured stump grinding, tree removal, and land clearing serving Huntsville, Madison, Decatur, and surrounding North Alabama communities.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase mb-3">Service Silos</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html#services" class="hover:text-amber-400 transition-colors">Precision Stump Grinding</a></li>
+                    <li><a href="index.html#services" class="hover:text-amber-400 transition-colors">Hazardous Tree Removal</a></li>
+                    <li><a href="index.html#services" class="hover:text-amber-400 transition-colors">24/7 Emergency Storm Service</a></li>
+                    <li><a href="#" class="text-amber-400 transition-colors font-bold">Tree Trimming & Thinning</a></li>
+                    <li><a href="index.html#services" class="hover:text-amber-400 transition-colors">Lot & Land Clearing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase mb-3">Service Hubs</h4>
+                <ul class="space-y-2">
+                    <li><a href="#service-areas" class="hover:text-amber-400 transition-colors">Madison, AL Arborist Services</a></li>
+                    <li><a href="#service-areas" class="hover:text-amber-400 transition-colors">Huntsville, AL Tree Trimming</a></li>
+                    <li><a href="#service-areas" class="hover:text-amber-400 transition-colors">Athens, AL Pruning Services</a></li>
+                    <li><a href="#service-areas" class="hover:text-amber-400 transition-colors">Decatur, AL Tree Care</a></li>
+                    <li><a href="#service-areas" class="hover:text-amber-400 transition-colors">Harvest & Meridianville, AL</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold uppercase mb-3">Contact & NAP</h4>
+                <p class="text-slate-300 font-bold">Huntsville Stump Removal & Tree Service</p>
+                <p class="mt-1">100 Clinton Ave W, Huntsville, AL 35801</p>
+                <p class="mt-1">Phone: <span class="text-amber-400 font-bold">(256) 555-0199</span></p>
+                <p class="mt-1">Hours: Mon-Sat: 7:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 stumpremovalhuntsville.com. All Rights Reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-slate-200">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-200">Terms of Service</a>
+                <a href="#" class="hover:text-slate-200">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Photo Quote Upload Modal -->
+    <div id="quoteModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeQuoteModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="space-y-4">
+                <div class="text-center">
+                    <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Fast Response Estimate</span>
+                    <h3 class="text-2xl font-black text-white mt-1">Upload Tree Photos</h3>
+                    <p class="text-xs text-slate-400 mt-1">Attach 1-2 photos of the tree you need pruned for a quick evaluation sent straight to your phone.</p>
+                </div>
+
+                <form onsubmit="handleQuoteSubmit(event)" class="space-y-4 pt-2" id="quoteForm">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Your Full Name</label>
+                        <input type="text" name="name" required placeholder="John Doe" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Phone Number (For Text Quote)</label>
+                        <input type="tel" name="phone" required placeholder="(256) 555-0199" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Service City / Location</label>
+                        <select name="location" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                            <option value="Huntsville, AL">Huntsville, AL</option>
+                            <option value="Madison, AL">Madison, AL</option>
+                            <option value="Athens, AL">Athens, AL</option>
+                            <option value="Meridianville, AL">Meridianville, AL</option>
+                            <option value="Harvest, AL">Harvest, AL</option>
+                            <option value="Hazel Green, AL">Hazel Green, AL</option>
+                            <option value="New Market, AL">New Market, AL</option>
+                            <option value="Owens X Rds, AL">Owens X Rds, AL</option>
+                            <option value="Triana, AL">Triana, AL</option>
+                            <option value="Ardmore, AL">Ardmore, AL</option>
+                            <option value="Decatur, AL">Decatur, AL</option>
+                            <option value="Hartselle, AL">Hartselle, AL</option>
+                            <option value="Albertville, AL">Albertville, AL</option>
+                            <option value="Boaz, AL">Boaz, AL</option>
+                            <option value="Arab, AL">Arab, AL</option>
+                            <option value="Guntersville, AL">Guntersville, AL</option>
+                            <option value="Other">Other North AL Area</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Attach Tree Photo(s)</label>
+                        <div class="border-2 border-dashed border-slate-700 hover:border-amber-400 rounded-2xl p-6 text-center cursor-pointer bg-slate-800/50 transition-colors" onclick="document.getElementById('photoInput').click()">
+                            <i class="fa-solid fa-cloud-arrow-up text-3xl text-amber-400 mb-2"></i>
+                            <span class="block text-xs font-bold text-slate-200">Tap to select photos or drop files here</span>
+                            <span class="block text-[10px] text-slate-500 mt-1">JPG, PNG supported (Multiple allowed)</span>
+                            <input type="file" name="attachment" class="hidden" id="photoInput" onchange="updateFileName(this)" accept="image/png, image/jpeg, image/jpg" multiple>
+                            <p id="fileNameDisplay" class="text-xs text-amber-400 font-bold mt-2 hidden"></p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-1">Pruning Needs / Notes</label>
+                        <textarea name="notes" rows="2" placeholder="e.g. Branches hitting the roof, dead limbs falling, needs thinning..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-amber-400"></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-base shadow-lg transition-all">
+                        Send Photo For Quote Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-brand-900 border border-brand-500 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-amber-400 text-xl"></i>
+        <div>
+            <span class="font-bold text-sm block" id="toastTitle">Success!</span>
+            <span class="text-xs text-slate-300" id="toastMsg">Your photos have been submitted.</span>
+        </div>
+    </div>
+
+    <script>
+        // ВСТАВЬТЕ СЮДА URL ВАШЕГО CLOUDFLARE WORKER
+        const WORKER_URL = 'https://api.stumpremovalhuntsville.com';
+
+        function calculateTrimmingEstimate() {
+            const height = parseInt(document.getElementById('treeHeight').value) || 40;
+            const goalFactor = parseFloat(document.getElementById('trimGoal').value) || 1.0;
+            const accessFactor = parseFloat(document.getElementById('accessLevel').value) || 1.0;
+
+            document.getElementById('heightVal').innerText = height + ' ft';
+
+            // Rough Base Estimate Formula for Trimming
+            let baseCost = 150 + (height * 3.5);
+
+            let total = (baseCost * goalFactor * accessFactor);
+            let low = Math.round(total * 0.85 / 10) * 10; // Round to nearest 10
+            let high = Math.round(total * 1.15 / 10) * 10;
+
+            document.getElementById('estimatedCostOutput').innerText = '$' + low + ' - $' + high;
+        }
+
+        function toggleFaq(id) {
+            const ans = document.getElementById('faq-ans-' + id);
+            const icon = document.getElementById('faq-icon-' + id);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                ans.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        function openQuoteModal() {
+            document.getElementById('quoteModal').classList.remove('hidden');
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quoteModal').classList.add('hidden');
+        }
+
+        function updateFileName(input) {
+            const display = document.getElementById('fileNameDisplay');
+            if (input.files && input.files.length > 0) {
+                if (input.files.length === 1) {
+                    display.innerText = 'Selected: ' + input.files[0].name;
+                } else {
+                    display.innerText = 'Selected ' + input.files.length + ' photos';
+                }
+                display.classList.remove('hidden');
+            } else {
+                display.classList.add('hidden');
+            }
+        }
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            const submitBtn = document.getElementById('submitBtn');
+            const originalBtnText = submitBtn.innerText;
+
+            submitBtn.innerText = "Sending Request...";
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            fetch(WORKER_URL, {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                const data = await response.json();
+                if (response.ok && data.success) {
+                    closeQuoteModal();
+                    
+                    const toast = document.getElementById('toast');
+                    toast.classList.remove('translate-y-24', 'opacity-0');
+                    
+                    setTimeout(() => {
+                        toast.classList.add('translate-y-24', 'opacity-0');
+                    }, 5000);
+
+                    form.reset();
+                    document.getElementById('fileNameDisplay').classList.add('hidden');
+                } else {
+                    alert("Submission failed: " + (data.error || "Unknown server error"));
+                }
+            })
+            .catch(error => {
+                console.error('Form submission error:', error);
+                alert("Network error. Please make sure your Cloudflare Worker URL is correct.");
+            })
+            .finally(() => {
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+            });
+        }
+    </script>
+</body>
+</html>
